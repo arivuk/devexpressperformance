@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example </title>
+  
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.common.css" />
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.light.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <script src="//code.angularjs.org/1.8.0/angular.min.js"></script>
+  <script src="// "></script>
+  <script src="https://cdn3.devexpress.com/jslib/20.1.6/js/dx.all.js"></script> -->
+
+  <!-- <link rel="stylesheet" href="webfile/dx.common.css" />
+  <link rel="stylesheet" href="webfile/dx.light.css" /> -->
+  <script src="webfile/jquery.min.js"></script>
+  <script src="webfile/angular.min.js"></script>
+  <script src="webfile/angular-route.js"></script>
+  <script src="webfile/dx.all.js"></script>
+  <script src="script.js"></script>
+  <script src="directives/caseRelation.controller.js"></script>
+  
+  <script src="directives/caserelation.directive.js"></script>
+  <script src="directives/casesearch/caseSearch.directive.js"></script>
+  
+  <script src="directives/casesearch/caseSearch.controller.js"></script>
+  <script src="directives/activityaudit/activity.directive.js"></script>
+  <script type="text/javascript">
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+</head>
+<body ng-app="ngRouteExample" class="dx-viewport">
+  <div ng-controller="MainController">
+  <a href="book">book</a> |
+  <a href="grid">Grid</a> <br />
+  <hr />
+  <div ng-view></div>
+
+  
+
+</div>
+</body>
+</html>
+
+<!-- 
+Copyright 2020 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
